@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Pokémon</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Compile com: tsc  (gera script.js a partir de script.ts) -->
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <!-- h1, .search-box e #pokemonCard devem ser filhos diretos de .container -->
+    <main class="container">
+        <h1>Quem é esse Pokémon?</h1>
+
+        <div class="search-box">
+            <input
+                id="pokemonInput"
+                type="text"
+                placeholder="Nome ou número (ex.: onix, mew...)"
+                autocomplete="off"
+                aria-label="Nome ou número do Pokémon"
+            />
+            <button id="searchBtn" type="button">Buscar</button>
+        </div>
+
+        <div id="pokemonCard" class="card-container" aria-live="polite"></div>
+    </main>
+</body>
+</html>
